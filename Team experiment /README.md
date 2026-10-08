@@ -1,352 +1,713 @@
-IyBQYXJhbGxlbCBTdW0gYW5kIEF2ZXJhZ2Ugb2YgRGF0YXNldCB1c2luZyBP
-cGVuTVAKCiMjIFBhcmFsbGVsIENvbXB1dGluZyBNaW5pIFByb2plY3QKCiMj
-IyBUaGVtZSAzIOKAkyBQYXJhbGxlbCBTdW0gYW5kIEF2ZXJhZ2Ugb2YgRGF0
-YXNldAoKLS0tCgojIyAxLiBQcm9qZWN0IE92ZXJ2aWV3CgpUaGlzIHByb2pl
-Y3QgaW1wbGVtZW50cyB0aGUgY2FsY3VsYXRpb24gb2YgdGhlICoqc3VtIGFu
-ZCBhdmVyYWdlIG9mIGEgbGFyZ2UgZGF0YXNldCoqIHVzaW5nIGJvdGggc2Vx
-dWVudGlhbCBhbmQgcGFyYWxsZWwgYXBwcm9hY2hlcy4KClRoZSBwYXJhbGxl
-bCBpbXBsZW1lbnRhdGlvbiB1c2VzICoqT3Blbk1QKiogdG8gZGlzdHJpYnV0
-ZSB0aGUgc3VtbWF0aW9uIHdvcmtsb2FkIGFtb25nIG11bHRpcGxlIHRocmVh
-ZHMuCgpUaGUgbWFpbiBvYmplY3RpdmUgaXMgdG8gc3R1ZHkgdGhlIHBlcmZv
-cm1hbmNlIGltcHJvdmVtZW50IG9idGFpbmVkIHRocm91Z2ggcGFyYWxsZWwg
-Y29tcHV0aW5nIGJ5IGNvbXBhcmluZzoKCi0gU2VxdWVudGlhbCBleGVjdXRp
-b24KLSBPcGVuTVAgZXhlY3V0aW9uIHdpdGggMSB0aHJlYWQKLSBPcGVuTVAg
-ZXhlY3V0aW9uIHdpdGggMiB0aHJlYWRzCi0gT3Blbk1QIGV4ZWN1dGlvbiB3
-aXRoIDQgdGhyZWFkcwotIE9wZW5NUCBleGVjdXRpb24gd2l0aCA4IHRocmVh
-ZHMKClRoZSBleHBlcmltZW50cyBhcmUgcGVyZm9ybWVkIHVzaW5nIGRpZmZl
-cmVudCBkYXRhc2V0IHNpemVzIGFuZCB0aGUgZXhlY3V0aW9uIHRpbWUsIHNw
-ZWVkdXAsIGFuZCBlZmZpY2llbmN5IGFyZSBhbmFseXplZC4KCi0tLQoKIyMg
-Mi4gUHJvYmxlbSBTdGF0ZW1lbnQKCkNhbGN1bGF0aW5nIHRoZSBzdW0gYW5k
-IGF2ZXJhZ2Ugb2YgYSB2ZXJ5IGxhcmdlIGRhdGFzZXQgc2VxdWVudGlhbGx5
-IHJlcXVpcmVzIHByb2Nlc3NpbmcgZXZlcnkgZWxlbWVudCBvbmUgYWZ0ZXIg
-YW5vdGhlci4KCkZvciBhIGxhcmdlIG51bWJlciBvZiBlbGVtZW50cywgdGhl
-IGNvbXB1dGF0aW9uIGNhbiB0YWtlIG1vcmUgdGltZS4KClRoZSBwcm9ibGVt
-IGlzIHRvIGRlc2lnbiBhIHBhcmFsbGVsIHNvbHV0aW9uIHVzaW5nIE9wZW5N
-UCB3aGVyZSB0aGUgZGF0YXNldCBpcyBkaXZpZGVkIGFtb25nIG11bHRpcGxl
-IHRocmVhZHMgc28gdGhhdCB0aGUgc3VtIGNhbiBiZSBjYWxjdWxhdGVkIGNv
-bmN1cnJlbnRseS4KClRoZSBmaW5hbCByZXN1bHQgbXVzdCBiZSBjb3JyZWN0
-IGFuZCBlcXVpdmFsZW50IHRvIHRoZSBzZXF1ZW50aWFsIGltcGxlbWVudGF0
-aW9uLgoKLS0tCgojIyAzLiBPYmplY3RpdmVzCgpUaGUgbWFpbiBvYmplY3Rp
-dmVzIG9mIHRoaXMgcHJvamVjdCBhcmU6CgoxLiBJbXBsZW1lbnQgYSBzZXF1
-ZW50aWFsIHN1bSBhbmQgYXZlcmFnZSBjYWxjdWxhdGlvbi4KMi4gSW1wbGVt
-ZW50IGEgcGFyYWxsZWwgdmVyc2lvbiB1c2luZyBPcGVuTVAuCjMuIFVzZSBt
-dWx0aXBsZSB0aHJlYWRzIHRvIGRpc3RyaWJ1dGUgdGhlIGNvbXB1dGF0aW9u
-Lgo0LiBVc2UgT3Blbk1QIHJlZHVjdGlvbiB0byBzYWZlbHkgY2FsY3VsYXRl
-IHRoZSB0b3RhbCBzdW0uCjUuIFRlc3QgdGhlIGltcGxlbWVudGF0aW9uIHdp
-dGggZGlmZmVyZW50IGRhdGFzZXQgc2l6ZXMuCjYuIENvbXBhcmUgZXhlY3V0
-aW9uIHRpbWUgZm9yIGRpZmZlcmVudCB0aHJlYWQgY291bnRzLgo3LiBDYWxj
-dWxhdGUgc3BlZWR1cCBhbmQgZWZmaWNpZW5jeS4KOC4gR2VuZXJhdGUgZ3Jh
-cGhzIGZvciBwZXJmb3JtYW5jZSBhbmFseXNpcy4KOS4gRGV0ZXJtaW5lIHRo
-ZSBtb3N0IGVmZmVjdGl2ZSBudW1iZXIgb2YgdGhyZWFkcyBmb3IgdGhlIHRl
-c3RlZCB3b3JrbG9hZC4KCi0tLQoKIyMgNC4gVGVjaG5vbG9naWVzIFVzZWQK
-CnwgVGVjaG5vbG9neSB8IFB1cnBvc2UgfAp8LS0tfC0tLXwKfCBDIHwgUHJv
-Z3JhbSBpbXBsZW1lbnRhdGlvbiB8CnwgT3Blbk1QIHwgUGFyYWxsZWwgcHJv
-Z3JhbW1pbmcgfAp8IEdDQyB8IEMgY29tcGlsZXIgfAp8IE1TWVMyIFVDUlQ2
-NCB8IEJ1aWxkIGFuZCBleGVjdXRpb24gZW52aXJvbm1lbnQgfAp8IFB5dGhv
-biB8IEdyYXBoIGdlbmVyYXRpb24gfAp8IFBhbmRhcyB8IFByb2Nlc3Npbmcg
-YmVuY2htYXJrIGRhdGEgfAp8IE1hdHBsb3RsaWIgfCBHZW5lcmF0aW5nIGdy
-YXBocyB8CnwgR2l0SHViIHwgUHJvamVjdCByZXBvc2l0b3J5IGFuZCBzdWJt
-aXNzaW9uIHwKCi0tLQoKIyMgNS4gUGFyYWxsZWwgQ29tcHV0aW5nIE1vZGVs
-CgpUaGUgcHJvamVjdCB1c2VzIHRoZSAqKnNoYXJlZC1tZW1vcnkgcGFyYWxs
-ZWwgcHJvZ3JhbW1pbmcgbW9kZWwqKiB3aXRoIE9wZW5NUC4KCk9wZW5NUCBh
-bGxvd3MgbXVsdGlwbGUgdGhyZWFkcyB0byBleGVjdXRlIHBhcnRzIG9mIGEg
-bG9vcCBjb25jdXJyZW50bHkuCgpUaGUgbWFpbiBwYXJhbGxlbCBvcGVyYXRp
-b24gaXM6CgpgYGBjCiNwcmFnbWEgb21wIHBhcmFsbGVsIGZvciByZWR1Y3Rp
-b24oKzpzdW0pCmZvciAobG9uZyBsb25nIGkgPSAwOyBpIDwgbjsgKytpKQog
-ICAgc3VtICs9IGRhdGFbaV07CmBgYAoKVGhlIGBwYXJhbGxlbCBmb3JgIGRp
-cmVjdGl2ZSBkaXN0cmlidXRlcyBsb29wIGl0ZXJhdGlvbnMgYW1vbmcgbXVs
-dGlwbGUgdGhyZWFkcy4KClRoZSBgcmVkdWN0aW9uKCs6c3VtKWAgY2xhdXNl
-IGVuc3VyZXMgdGhhdCBlYWNoIHRocmVhZCBjYW4gbWFpbnRhaW4gaXRzIG93
-biBwYXJ0aWFsIHN1bSBhbmQgdGhhdCB0aGUgcGFydGlhbCBzdW1zIGFyZSBz
-YWZlbHkgY29tYmluZWQgaW50byB0aGUgZmluYWwgc3VtLgoKLS0tCgojIyA2
-LiBBbGdvcml0aG0KCiMjIyA2LjEgU2VxdWVudGlhbCBBbGdvcml0aG0KCjEu
-IFJlYWQgdGhlIGRhdGFzZXQgc2l6ZS4KMi4gQWxsb2NhdGUgbWVtb3J5IGZv
-ciB0aGUgZGF0YXNldC4KMy4gSW5pdGlhbGl6ZSB0aGUgZGF0YXNldC4KNC4g
-U2V0IHRoZSBzdW0gdG8gemVyby4KNS4gVHJhdmVyc2UgZXZlcnkgZWxlbWVu
-dCBzZXF1ZW50aWFsbHkuCjYuIEFkZCBldmVyeSBlbGVtZW50IHRvIHRoZSBz
-dW0uCjcuIENhbGN1bGF0ZSB0aGUgYXZlcmFnZToKCmBgYHRleHQKQXZlcmFn
-ZSA9IFN1bSAvIE51bWJlciBvZiBFbGVtZW50cwpgYGAKCjguIERpc3BsYXkg
-dGhlIHN1bSwgYXZlcmFnZSBhbmQgZXhlY3V0aW9uIHRpbWUuCgotLS0KCiMj
-IyA2LjIgUGFyYWxsZWwgQWxnb3JpdGhtCgoxLiBSZWFkIHRoZSBkYXRhc2V0
-IHNpemUgYW5kIG51bWJlciBvZiB0aHJlYWRzLgoyLiBBbGxvY2F0ZSBtZW1v
-cnkgZm9yIHRoZSBkYXRhc2V0LgozLiBJbml0aWFsaXplIHRoZSBkYXRhc2V0
-IHVzaW5nIE9wZW5NUC4KNC4gU2V0IHRoZSBudW1iZXIgb2YgT3Blbk1QIHRo
-cmVhZHMuCjUuIERpdmlkZSB0aGUgc3VtbWF0aW9uIGxvb3AgYW1vbmcgdGhl
-IGF2YWlsYWJsZSB0aHJlYWRzLgo2LiBFYWNoIHRocmVhZCBjYWxjdWxhdGVz
-IGEgcGFydGlhbCBzdW0uCjcuIE9wZW5NUCByZWR1Y3Rpb24gY29tYmluZXMg
-dGhlIHBhcnRpYWwgc3Vtcy4KOC4gQ2FsY3VsYXRlIHRoZSBhdmVyYWdlLgo5
-LiBEaXNwbGF5IHRoZSBzdW0sIGF2ZXJhZ2UgYW5kIGV4ZWN1dGlvbiB0aW1l
-LgoKLS0tCgojIyA3LiBEYXRhc2V0CgpGb3IgdGhlIGJlbmNobWFyayBleHBl
-cmltZW50cywgdGhlIHByb2dyYW0gaW5pdGlhbGl6ZXMgdGhlIGRhdGFzZXQg
-d2l0aCB2YWx1ZXMgb2YgYDEuMGAuCgpUaGVyZWZvcmU6CgpgYGB0ZXh0ClN1
-bSA9IE51bWJlciBvZiBFbGVtZW50cwpBdmVyYWdlID0gMS4wCmBgYAoKRm9y
-IGV4YW1wbGU6CgpgYGB0ZXh0CkRhdGFzZXQgc2l6ZSA9IDUwLDAwMCwwMDAK
-ClN1bSAgICAgPSA1MCwwMDAsMDAwCkF2ZXJhZ2UgPSAxLjAKYGBgCgpVc2lu
-ZyBhIGtub3duIGRhdGFzZXQgbWFrZXMgaXQgZWFzeSB0byB2ZXJpZnkgdGhl
-IGNvcnJlY3RuZXNzIG9mIGJvdGggdGhlIHNlcXVlbnRpYWwgYW5kIHBhcmFs
-bGVsIGltcGxlbWVudGF0aW9ucy4KCi0tLQoKIyMgOC4gUHJvamVjdCBTdHJ1
-Y3R1cmUKCmBgYHRleHQKVGhlbWUzX1BhcmFsbGVsX1N1bV9BdmVyYWdlX09w
-ZW5NUF9GSU5BTC8K4pSCCuKUnOKUgOKUgCBSRUFETUUubWQK4pSc4pSA4pSA
-IE1ha2VmaWxlCuKUnOKUgOKUgCBydW5fZXhwZXJpbWVudHMuc2gK4pSc4pSA
-4pSAIGdlbmVyYXRlX2dyYXBocy5weQrilJzilIDilIAgV0lORE9XU19SVU5f
-R1VJREUubWQK4pSc4pSA4pSAIFZJVkFfUUEubWQK4pSCCuKUnOKUgOKUgCBz
-cmMvCuKUgiAgIOKUnOKUgOKUgCBzZXF1ZW50aWFsLmMK4pSCICAg4pSc4pSA
-4pSAIHBhcmFsbGVsLmMK4pSCICAg4pSc4pSA4pSAIGdlbmVyYXRlX2RhdGFz
-ZXQuYwrilIIgICDilJTilIDilIAgcGFyYWxsZWxfZmlsZS5jCuKUggrilJzi
-lIDilIAgZGF0YS8K4pSCICAg4pSU4pSA4pSAIFJFQURNRS5tZArilIIK4pSc
-4pSA4pSAIHJlc3VsdHMvCuKUgiAgIOKUnOKUgOKUgCBiZW5jaG1hcmsuY3N2
-CuKUgiAgIOKUlOKUgOKUgCBSRUFETUUubWQK4pSCCuKUnOKUgOKUgCBncmFw
-aHMvCuKUgiAgIOKUnOKUgOKUgCBleGVjdXRpb25fdGltZV90aHJlYWRzXzEw
-MDAwMDAucG5nCuKUgiAgIOKUnOKUgOKUgCBleGVjdXRpb25fdGltZV90aHJl
-YWRzXzUwMDAwMDAucG5nCuKUgiAgIOKUnOKUgOKUgCBleGVjdXRpb25fdGlt
-ZV90aHJlYWRzXzEwMDAwMDAwLnBuZwrilIIgICDilJzilIDilIAgZXhlY3V0
-aW9uX3RpbWVfdGhyZWFkc181MDAwMDAwMC5wbmcK4pSCICAg4pSc4pSA4pSA
-IHNwZWVkdXBfMTAwMDAwMC5wbmcK4pSCICAg4pSc4pSA4pSAIHNwZWVkdXBf
-NTAwMDAwMC5wbmcK4pSCICAg4pSc4pSA4pSAIHNwZWVkdXBfMTAwMDAwMDAu
-cG5nCuKUgiAgIOKUnOKUgOKUgCBzcGVlZHVwXzUwMDAwMDAwLnBuZwrilIIg
-ICDilJzilIDilIAgZWZmaWNpZW5jeV8xMDAwMDAwLnBuZwrilIIgICDilJzi
-lIDilIAgZWZmaWNpZW5jeV81MDAwMDAwLnBuZwrilIIgICDilJzilIDilIAg
-ZWZmaWNpZW5jeV8xMDAwMDAwMC5wbmcK4pSCICAg4pSU4pSA4pSAIGVmZmlj
-aWVuY3lfNTAwMDAwMDAucG5nCuKUggrilJzilIDilIAgcmVwb3J0LwrilIIg
-ICDilJTilIDilIAgUkVQT1JUX1RFTVBMQVRFLm1kCuKUggrilJTilIDilIAg
-cHJlc2VudGF0aW9uLwogICAg4pSc4pSA4pSAIFBQVF9DT05URU5ULm1kCiAg
-ICDilJTilIDilIAgUFBUX1JFQURZX0NPTlRFTlQubWQKYGBgCgotLS0KCiMj
-IDkuIFNvdXJjZSBGaWxlcwoKIyMjIGBzcmMvc2VxdWVudGlhbC5jYAoKQ29u
-dGFpbnMgdGhlIHNlcXVlbnRpYWwgaW1wbGVtZW50YXRpb24gZm9yIGNhbGN1
-bGF0aW5nIHRoZSBzdW0gYW5kIGF2ZXJhZ2Ugb2YgdGhlIGRhdGFzZXQuCgoj
-IyMgYHNyYy9wYXJhbGxlbC5jYAoKQ29udGFpbnMgdGhlIE9wZW5NUCBwYXJh
-bGxlbCBpbXBsZW1lbnRhdGlvbiB1c2luZyBtdWx0aXBsZSB0aHJlYWRzIGFu
-ZCByZWR1Y3Rpb24uCgojIyMgYHNyYy9nZW5lcmF0ZV9kYXRhc2V0LmNgCgpH
-ZW5lcmF0ZXMgYSBkYXRhc2V0IGZpbGUgY29udGFpbmluZyBudW1lcmljYWwg
-dmFsdWVzLgoKIyMjIGBzcmMvcGFyYWxsZWxfZmlsZS5jYAoKUmVhZHMgYSBk
-YXRhc2V0IGZyb20gYSBmaWxlIGFuZCBjYWxjdWxhdGVzIHRoZSBzdW0gYW5k
-IGF2ZXJhZ2UgdXNpbmcgT3Blbk1QLgoKIyMjIGBnZW5lcmF0ZV9ncmFwaHMu
-cHlgCgpSZWFkcyBiZW5jaG1hcmsgcmVzdWx0cyBhbmQgZ2VuZXJhdGVzIGV4
-ZWN1dGlvbi10aW1lLCBzcGVlZHVwIGFuZCBlZmZpY2llbmN5IGdyYXBocy4K
-CiMjIyBgcmVzdWx0cy9iZW5jaG1hcmsuY3N2YAoKQ29udGFpbnMgdGhlIG1l
-YXN1cmVkIGV4ZWN1dGlvbiB0aW1lcyBmcm9tIHRoZSBleHBlcmltZW50cy4K
-Ci0tLQoKIyMgMTAuIENvbXBpbGF0aW9uCgpUaGUgcHJvamVjdCB3YXMgY29t
-cGlsZWQgdXNpbmcgR0NDLgoKIyMjIFNlcXVlbnRpYWwgUHJvZ3JhbQoKYGBg
-YmFzaApnY2MgLU8yIC1vIHNlcXVlbnRpYWwuZXhlIHNyYy9zZXF1ZW50aWFs
-LmMKYGBgCgojIyMgUGFyYWxsZWwgUHJvZ3JhbQoKYGBgYmFzaApnY2MgLU8y
-IC1mb3Blbm1wIC1vIHBhcmFsbGVsLmV4ZSBzcmMvcGFyYWxsZWwuYwpgYGAK
-ClRoZSBgLWZvcGVubXBgIG9wdGlvbiBlbmFibGVzIE9wZW5NUCBzdXBwb3J0
-LgoKLS0tCgojIyAxMS4gUnVubmluZyB0aGUgUHJvZ3JhbXMKCiMjIyBTZXF1
-ZW50aWFsCgpgYGBiYXNoCi4vc2VxdWVudGlhbC5leGUgMTAwMDAwMApgYGAK
-CiMjIyBQYXJhbGxlbCB3aXRoIDEgVGhyZWFkCgpgYGBiYXNoCi4vcGFyYWxs
-ZWwuZXhlIDEwMDAwMDAgMQpgYGAKCiMjIyBQYXJhbGxlbCB3aXRoIDIgVGhy
-ZWFkcwoKYGBgYmFzaAouL3BhcmFsbGVsLmV4ZSAxMDAwMDAwIDIKYGBgCgoj
-IyMgUGFyYWxsZWwgd2l0aCA0IFRocmVhZHMKCmBgYGJhc2gKLi9wYXJhbGxl
-bC5leGUgMTAwMDAwMCA0CmBgYAoKIyMjIFBhcmFsbGVsIHdpdGggOCBUaHJl
-YWRzCgpgYGBiYXNoCi4vcGFyYWxsZWwuZXhlIDEwMDAwMDAgOApgYGAKClRo
-ZSBzYW1lIGNvbW1hbmRzIGNhbiBiZSB1c2VkIHdpdGggb3RoZXIgZGF0YXNl
-dCBzaXplcy4KCi0tLQoKIyMgMTIuIEV4cGVyaW1lbnRhbCBDb25maWd1cmF0
-aW9uCgpUaGUgZXhwZXJpbWVudHMgd2VyZSBwZXJmb3JtZWQgdXNpbmcgdGhl
-IGZvbGxvd2luZyBkYXRhc2V0IHNpemVzOgoKYGBgdGV4dAoxLDAwMCwwMDAK
-NSwwMDAsMDAwCjEwLDAwMCwwMDAKNTAsMDAwLDAwMApgYGAKClRoZSBmb2xs
-b3dpbmcgT3Blbk1QIHRocmVhZCBjb3VudHMgd2VyZSB0ZXN0ZWQ6CgpgYGB0
-ZXh0CjEKMgo0CjgKYGBgCgpUaGVyZWZvcmUsIGEgdG90YWwgb2Y6CgpgYGB0
-ZXh0CjQgZGF0YXNldCBzaXplcyDDlyA0IHRocmVhZCBjb25maWd1cmF0aW9u
-cyA9IDE2IHBhcmFsbGVsIGV4cGVyaW1lbnRzCmBgYAoKd2VyZSBwZXJmb3Jt
-ZWQuCgpTZXF1ZW50aWFsIG1lYXN1cmVtZW50cyB3ZXJlIGFsc28gY29sbGVj
-dGVkIGZvciBlYWNoIGRhdGFzZXQgc2l6ZS4KCi0tLQoKIyAxMy4gRXhwZXJp
-bWVudGFsIFJlc3VsdHMKCiMjIDEzLjEgRXhlY3V0aW9uIFRpbWUKClRoZSBt
-ZWFzdXJlZCBleGVjdXRpb24gdGltZXMgd2VyZToKCnwgRGF0YXNldCBTaXpl
-IHwgU2VxdWVudGlhbCAocykgfCAxIFRocmVhZCAocykgfCAyIFRocmVhZHMg
-KHMpIHwgNCBUaHJlYWRzIChzKSB8IDggVGhyZWFkcyAocykgfAp8LS0tOnwt
-LS06fC0tLTp8LS0tOnwtLS06fC0tLTp8CnwgMSwwMDAsMDAwIHwgMC4wMDIw
-MDAgfCAwLjAwMjAwMCB8IDAuMDAxMDAwIHwgMC4wMDEwMDAgfCAwLjAwMjAw
-MCB8CnwgNSwwMDAsMDAwIHwgMC4wMDcwMDAgfCAwLjAwNzAwMCB8IDAuMDA0
-MDAwIHwgMC4wMDMwMDAgfCAwLjAwNDAwMCB8CnwgMTAsMDAwLDAwMCB8IDAu
-MDE0MDAwIHwgMC4wMTMwMDAgfCAwLjAwODAwMCB8IDAuMDA1MDAwIHwgMC4w
-MDYwMDAgfAp8IDUwLDAwMCwwMDAgfCAwLjA2ODAwMCB8IDAuMDYyMDAwIHwg
-MC4wMzgwMDAgfCAwLjAyNDAwMCB8IDAuMDI1MDAwIHwKClRoZSByZXN1bHRz
-IHNob3cgdGhhdCBleGVjdXRpb24gdGltZSBnZW5lcmFsbHkgZGVjcmVhc2Vz
-IHdoZW4gbXVsdGlwbGUgdGhyZWFkcyBhcmUgdXNlZC4KClRoZSBiZXN0IGV4
-ZWN1dGlvbiB0aW1lIGZvciB0aGUgNTAtbWlsbGlvbi1lbGVtZW50IGRhdGFz
-ZXQgd2FzIG9idGFpbmVkIHVzaW5nIDQgdGhyZWFkcy4KCi0tLQoKIyMgMTMu
-MiA1MC1NaWxsaW9uLUVsZW1lbnQgRGF0YXNldAoKRm9yIHRoZSBsYXJnZXN0
-IGRhdGFzZXQsIHRoZSBtZWFzdXJlZCByZXN1bHRzIHdlcmU6Cgp8IFRocmVh
-ZHMgfCBFeGVjdXRpb24gVGltZSAocykgfAp8LS0tOnwtLS06fAp8IDEgfCAw
-LjA2MjAwMDAzNiB8CnwgMiB8IDAuMDM3OTk5ODY4IHwKfCA0IHwgMC4wMjM5
-OTk5MjkgfAp8IDggfCAwLjAyNTAwMDA5NSB8CgpUaGUgNC10aHJlYWQgY29u
-ZmlndXJhdGlvbiBwcm92aWRlZCB0aGUgbG93ZXN0IG1lYXN1cmVkIGV4ZWN1
-dGlvbiB0aW1lLgoKLS0tCgojIDE0LiBTcGVlZHVwCgpTcGVlZHVwIGlzIGNh
-bGN1bGF0ZWQgdXNpbmc6CgpgYGB0ZXh0ClNwZWVkdXAgPSBTZXF1ZW50aWFs
-IEV4ZWN1dGlvbiBUaW1lIC8gUGFyYWxsZWwgRXhlY3V0aW9uIFRpbWUKYGBg
-CgpGb3IgdGhlIDUwLW1pbGxpb24tZWxlbWVudCBkYXRhc2V0OgoKYGBgdGV4
-dApTZXF1ZW50aWFsIFRpbWUgPSAwLjA2ODAwMDAwMCBzCmBgYAoKIyMjIFNw
-ZWVkdXAgUmVzdWx0cwoKfCBUaHJlYWRzIHwgRXhlY3V0aW9uIFRpbWUgKHMp
-IHwgU3BlZWR1cCB8CnwtLS06fC0tLTp8LS0tOnwKfCAxIHwgMC4wNjIwMDAw
-MzYgfCAxLjEww5cgfAp8IDIgfCAwLjAzNzk5OTg2OCB8IDEuNznDlyB8Cnwg
-NCB8IDAuMDIzOTk5OTI5IHwgMi44M8OXIHwKfCA4IHwgMC4wMjUwMDAwOTUg
-fCAyLjcyw5cgfAoKVGhlIGhpZ2hlc3Qgc3BlZWR1cCBvYnRhaW5lZCB1c2lu
-ZyB0aGUgc2VxdWVudGlhbCBwcm9ncmFtIGFzIHRoZSBiYXNlbGluZSB3YXMg
-YXBwcm94aW1hdGVseToKCmBgYHRleHQKMi44M8OXCmBgYAoKd2l0aCA0IHRo
-cmVhZHMuCgotLS0KCiMgMTUuIEVmZmljaWVuY3kKCkVmZmljaWVuY3kgaXMg
-Y2FsY3VsYXRlZCB1c2luZzoKCmBgYHRleHQKRWZmaWNpZW5jeSA9IChTcGVl
-ZHVwIC8gTnVtYmVyIG9mIFRocmVhZHMpIMOXIDEwMApgYGAKCkZvciB0aGUg
-NTAtbWlsbGlvbi1lbGVtZW50IGRhdGFzZXQ6Cgp8IFRocmVhZHMgfCBTcGVl
-ZHVwIHwgRWZmaWNpZW5jeSB8CnwtLS06fC0tLTp8LS0tOnwKfCAxIHwgMS4x
-MMOXIHwgMTA5LjclIHwKfCAyIHwgMS43OcOXIHwgODkuNSUgfAp8IDQgfCAy
-Ljgzw5cgfCA3MC44JSB8CnwgOCB8IDIuNzLDlyB8IDM0LjAlIHwKClRoZSBl
-ZmZpY2llbmN5IGRlY3JlYXNlcyBhcyB0aGUgbnVtYmVyIG9mIHRocmVhZHMg
-aW5jcmVhc2VzLgoKVGhlIG1lYXN1cmVkIGVmZmljaWVuY3kgYWJvdmUgMTAw
-JSBmb3Igb25lIHRocmVhZCBpcyBjYXVzZWQgYnkgZGlmZmVyZW5jZXMgYmV0
-d2VlbiBzZXBhcmF0ZSBzZXF1ZW50aWFsIGFuZCBPcGVuTVAgcHJvZ3JhbSBl
-eGVjdXRpb25zIGFuZCB0aGUgZXh0cmVtZWx5IHNtYWxsIG1lYXN1cmVkIGV4
-ZWN1dGlvbiB0aW1lcy4gSXQgc2hvdWxkIG5vdCBiZSBpbnRlcnByZXRlZCBh
-cyBhY3R1YWwgcGFyYWxsZWwgZWZmaWNpZW5jeSBncmVhdGVyIHRoYW4gMTAw
-JS4KCi0tLQoKIyAxNi4gUGVyZm9ybWFuY2UgQW5hbHlzaXMKClRoZSBleHBl
-cmltZW50YWwgcmVzdWx0cyBkZW1vbnN0cmF0ZSB0aGF0IE9wZW5NUCBjYW4g
-aW1wcm92ZSB0aGUgZXhlY3V0aW9uIHRpbWUgb2YgdGhlIHN1bSBhbmQgYXZl
-cmFnZSBjYWxjdWxhdGlvbiBieSBkaXN0cmlidXRpbmcgdGhlIHdvcmtsb2Fk
-IGFtb25nIG11bHRpcGxlIHRocmVhZHMuCgpGb3IgdGhlIDUwLW1pbGxpb24t
-ZWxlbWVudCBkYXRhc2V0LCBleGVjdXRpb24gdGltZSBkZWNyZWFzZWQgZnJv
-bSBhcHByb3hpbWF0ZWx5OgoKYGBgdGV4dAowLjA2MiBzZWNvbmRzIOKGkiAw
-LjAyNCBzZWNvbmRzCmBgYAoKd2hlbiBpbmNyZWFzaW5nIHRoZSBPcGVuTVAg
-dGhyZWFkIGNvdW50IGZyb20gMSB0byA0LgoKVGhlIGNvcnJlc3BvbmRpbmcg
-c3BlZWR1cCByZWxhdGl2ZSB0byB0aGUgc2VxdWVudGlhbCBpbXBsZW1lbnRh
-dGlvbiB3YXMgYXBwcm94aW1hdGVseToKCmBgYHRleHQKMi44M8OXCmBgYAoK
-SG93ZXZlciwgaW5jcmVhc2luZyB0aGUgbnVtYmVyIG9mIHRocmVhZHMgZnJv
-bSA0IHRvIDggZGlkIG5vdCBpbXByb3ZlIHBlcmZvcm1hbmNlLgoKVGhlIGV4
-ZWN1dGlvbiB0aW1lIGluY3JlYXNlZCBzbGlnaHRseToKCmBgYHRleHQKNCB0
-aHJlYWRzID0gMC4wMjM5OTk5Mjkgcwo4IHRocmVhZHMgPSAwLjAyNTAwMDA5
-NSBzCmBgYAoKVGhpcyBkZW1vbnN0cmF0ZXMgdGhhdCBpbmNyZWFzaW5nIHRo
-ZSBudW1iZXIgb2YgdGhyZWFkcyBkb2VzIG5vdCBhbHdheXMgcmVzdWx0IGlu
-IHByb3BvcnRpb25hbCBwZXJmb3JtYW5jZSBpbXByb3ZlbWVudC4KClBvc3Np
-YmxlIHJlYXNvbnMgaW5jbHVkZToKCi0gVGhyZWFkIG1hbmFnZW1lbnQgb3Zl
-cmhlYWQKLSBTeW5jaHJvbml6YXRpb24gb3ZlcmhlYWQKLSBNZW1vcnkgYWNj
-ZXNzIGxpbWl0YXRpb25zCi0gQ1BVIHJlc291cmNlIGxpbWl0YXRpb25zCi0g
-T3Blbk1QIHNjaGVkdWxpbmcgb3ZlcmhlYWQKLSBSZWR1Y3Rpb24gb3Zlcmhl
-YWQKClRoZXJlZm9yZSwgdGhlIG9wdGltYWwgbnVtYmVyIG9mIHRocmVhZHMg
-ZGVwZW5kcyBvbiBib3RoIHRoZSB3b3JrbG9hZCBhbmQgdGhlIGhhcmR3YXJl
-LgoKLS0tCgojIDE3LiBHcmFwaHMKClRoZSBwcm9qZWN0IGdlbmVyYXRlcyB0
-aHJlZSB0eXBlcyBvZiBncmFwaHMgZm9yIGVhY2ggZGF0YXNldCBzaXplLgoK
-IyMjIEV4ZWN1dGlvbiBUaW1lIHZzIFRocmVhZHMKClNob3dzIGhvdyBleGVj
-dXRpb24gdGltZSBjaGFuZ2VzIGFzIHRoZSBudW1iZXIgb2YgT3Blbk1QIHRo
-cmVhZHMgaW5jcmVhc2VzLgoKRXhhbXBsZToKCmBgYHRleHQKZ3JhcGhzL2V4
-ZWN1dGlvbl90aW1lX3RocmVhZHNfNTAwMDAwMDAucG5nCmBgYAoKIyMjIFNw
-ZWVkdXAgdnMgVGhyZWFkcwoKU2hvd3MgdGhlIHBlcmZvcm1hbmNlIGltcHJv
-dmVtZW50IG9idGFpbmVkIGZyb20gcGFyYWxsZWwgZXhlY3V0aW9uLgoKRXhh
-bXBsZToKCmBgYHRleHQKZ3JhcGhzL3NwZWVkdXBfNTAwMDAwMDAucG5nCmBg
-YAoKIyMjIEVmZmljaWVuY3kgdnMgVGhyZWFkcwoKU2hvd3MgaG93IGVmZmlj
-aWVudGx5IHRoZSBhdmFpbGFibGUgdGhyZWFkcyBhcmUgYmVpbmcgdXRpbGl6
-ZWQuCgpFeGFtcGxlOgoKYGBgdGV4dApncmFwaHMvZWZmaWNpZW5jeV81MDAw
-MDAwMC5wbmcKYGBgCgpHcmFwaHMgYXJlIGdlbmVyYXRlZCB1c2luZzoKCmBg
-YGJhc2gKcHl0aG9uIGdlbmVyYXRlX2dyYXBocy5weQpgYGAKCi0tLQoKIyAx
-OC4gQ29ycmVjdG5lc3MgVmVyaWZpY2F0aW9uCgpUaGUgcHJvZ3JhbSB3YXMg
-dmVyaWZpZWQgdXNpbmcgdGhlIGV4cGVjdGVkIG1hdGhlbWF0aWNhbCByZXN1
-bHQuCgpTaW5jZSBldmVyeSBnZW5lcmF0ZWQgZWxlbWVudCBoYXMgYSB2YWx1
-ZSBvZiBgMS4wYDoKCmBgYHRleHQKRXhwZWN0ZWQgU3VtID0gRGF0YXNldCBT
-aXplCkV4cGVjdGVkIEF2ZXJhZ2UgPSAxLjAKYGBgCgpGb3IgNTAgbWlsbGlv
-biBlbGVtZW50czoKCmBgYHRleHQKU3VtICAgICA9IDUwMDAwMDAwLjAwMDAw
-MApBdmVyYWdlID0gMS4wMDAwMDAKYGBgCgpUaGUgc2FtZSByZXN1bHRzIHdl
-cmUgb2J0YWluZWQgZnJvbSB0aGUgc2VxdWVudGlhbCBhbmQgcGFyYWxsZWwg
-aW1wbGVtZW50YXRpb25zLgoKVGhlcmVmb3JlLCB0aGUgT3Blbk1QIHJlZHVj
-dGlvbiBwcm9kdWNlcyB0aGUgY29ycmVjdCBmaW5hbCByZXN1bHQuCgotLS0K
-CiMgMTkuIENvbXBsZXhpdHkKCkZvciBhIGRhdGFzZXQgY29udGFpbmluZyBg
-TmAgZWxlbWVudHM6CgojIyMgU2VxdWVudGlhbAoKYGBgdGV4dApUaW1lIENv
-bXBsZXhpdHk6IE8oTikKU3BhY2UgQ29tcGxleGl0eTogTyhOKQpgYGAKCiMj
-IyBQYXJhbGxlbAoKVGhlIHRvdGFsIGFtb3VudCBvZiB3b3JrIHJlbWFpbnMg
-YXBwcm94aW1hdGVseToKCmBgYHRleHQKTyhOKQpgYGAKCmJ1dCB0aGUgY29t
-cHV0YXRpb24gaXMgZGlzdHJpYnV0ZWQgYW1vbmcgbXVsdGlwbGUgdGhyZWFk
-cy4KCklkZWFsbHksIHRoZSBjb21wdXRhdGlvbiB0aW1lIGNhbiBhcHByb2Fj
-aDoKCmBgYHRleHQKTyhOIC8gUCkKYGBgCgp3aGVyZToKCmBgYHRleHQKTiA9
-IG51bWJlciBvZiBkYXRhc2V0IGVsZW1lbnRzClAgPSBudW1iZXIgb2YgdGhy
-ZWFkcwpgYGAKCkluIHByYWN0aWNlLCB0aGUgcGVyZm9ybWFuY2UgaXMgYWZm
-ZWN0ZWQgYnkgcGFyYWxsZWxpemF0aW9uIG92ZXJoZWFkLCBzeW5jaHJvbml6
-YXRpb24sIG1lbW9yeSBhY2Nlc3MgYW5kIGhhcmR3YXJlIGxpbWl0YXRpb25z
-LgoKLS0tCgojIDIwLiBBZHZhbnRhZ2VzIG9mIHRoZSBQYXJhbGxlbCBBcHBy
-b2FjaAoKLSBGYXN0ZXIgcHJvY2Vzc2luZyBmb3Igc3VmZmljaWVudGx5IGxh
-cmdlIGRhdGFzZXRzLgotIE11bHRpcGxlIENQVSB0aHJlYWRzIGNhbiB3b3Jr
-IHNpbXVsdGFuZW91c2x5LgotIE9wZW5NUCBwcm92aWRlcyBhIHJlbGF0aXZl
-bHkgc2ltcGxlIHdheSB0byBpbXBsZW1lbnQgc2hhcmVkLW1lbW9yeSBwYXJh
-bGxlbGlzbS4KLSBSZWR1Y3Rpb24gcHJvdmlkZXMgc2FmZSBhY2N1bXVsYXRp
-b24gb2YgcGFydGlhbCBzdW1zLgotIFBlcmZvcm1hbmNlIGNhbiBiZSBldmFs
-dWF0ZWQgdXNpbmcgZGlmZmVyZW50IHRocmVhZCBjb3VudHMuCgotLS0KCiMg
-MjEuIExpbWl0YXRpb25zCgotIEluY3JlYXNpbmcgdGhyZWFkcyBkb2VzIG5v
-dCBhbHdheXMgaW1wcm92ZSBwZXJmb3JtYW5jZS4KLSBUaHJlYWQgbWFuYWdl
-bWVudCBpbnRyb2R1Y2VzIG92ZXJoZWFkLgotIFBlcmZvcm1hbmNlIGRlcGVu
-ZHMgb24gYXZhaWxhYmxlIENQVSByZXNvdXJjZXMuCi0gVmVyeSBzbWFsbCBk
-YXRhc2V0cyBtYXkgbm90IGJlbmVmaXQgc2lnbmlmaWNhbnRseSBmcm9tIHBh
-cmFsbGVsaXphdGlvbi4KLSBNZW1vcnkgYmFuZHdpZHRoIGNhbiBiZWNvbWUg
-YSBsaW1pdGluZyBmYWN0b3IuCi0gRXhlY3V0aW9uIHRpbWVzIGNhbiB2YXJ5
-IHNsaWdodGx5IGJldHdlZW4gcnVucyBiZWNhdXNlIG9mIHN5c3RlbSBhY3Rp
-dml0eS4KCi0tLQoKIyAyMi4gQ29uY2x1c2lvbgoKVGhpcyBwcm9qZWN0IHN1
-Y2Nlc3NmdWxseSBpbXBsZW1lbnRzIHBhcmFsbGVsIHN1bSBhbmQgYXZlcmFn
-ZSBjYWxjdWxhdGlvbiB1c2luZyBPcGVuTVAuCgpCb3RoIHRoZSBzZXF1ZW50
-aWFsIGFuZCBwYXJhbGxlbCBpbXBsZW1lbnRhdGlvbnMgcHJvZHVjZSB0aGUg
-Y29ycmVjdCBzdW0gYW5kIGF2ZXJhZ2UuCgpFeHBlcmltZW50cyB3ZXJlIHBl
-cmZvcm1lZCB1c2luZyBmb3VyIGRhdGFzZXQgc2l6ZXMgYW5kIGZvdXIgZGlm
-ZmVyZW50IHRocmVhZCBjb25maWd1cmF0aW9ucy4KClRoZSByZXN1bHRzIGRl
-bW9uc3RyYXRlIHRoYXQgcGFyYWxsZWwgZXhlY3V0aW9uIGNhbiByZWR1Y2Ug
-Y29tcHV0YXRpb24gdGltZSwgcGFydGljdWxhcmx5IGZvciBsYXJnZXIgZGF0
-YXNldHMuCgpGb3IgdGhlIDUwLW1pbGxpb24tZWxlbWVudCBkYXRhc2V0LCB0
-aGUgYmVzdCBtZWFzdXJlZCBjb25maWd1cmF0aW9uIHdhcyAqKjQgT3Blbk1Q
-IHRocmVhZHMqKiwgd2l0aCBhbiBleGVjdXRpb24gdGltZSBvZiBhcHByb3hp
-bWF0ZWx5OgoKYGBgdGV4dAowLjAyNCBzZWNvbmRzCmBgYAoKYW5kIGEgc3Bl
-ZWR1cCBvZiBhcHByb3hpbWF0ZWx5OgoKYGBgdGV4dAoyLjgzw5cKYGBgCgpj
-b21wYXJlZCB3aXRoIHRoZSBzZXF1ZW50aWFsIGltcGxlbWVudGF0aW9uLgoK
-SW5jcmVhc2luZyB0aGUgdGhyZWFkIGNvdW50IGZyb20gNCB0byA4IGRpZCBu
-b3QgaW1wcm92ZSBwZXJmb3JtYW5jZSwgZGVtb25zdHJhdGluZyB0aGF0IG1v
-cmUgdGhyZWFkcyBkbyBub3QgYWx3YXlzIHJlc3VsdCBpbiBiZXR0ZXIgcGVy
-Zm9ybWFuY2UuCgpPdmVyYWxsLCB0aGUgcHJvamVjdCBkZW1vbnN0cmF0ZXMg
-dGhlIHByYWN0aWNhbCBhcHBsaWNhdGlvbiBvZiBPcGVuTVAgZm9yIHNoYXJl
-ZC1tZW1vcnkgcGFyYWxsZWwgY29tcHV0aW5nIGFuZCBwZXJmb3JtYW5jZSBh
-bmFseXNpcy4KCi0tLQoKIyAyMy4gVGVhbSBNZW1iZXJzCgojIyMgUGFyYWxs
-ZWwgQ29tcHV0aW5nIE1pbmkgUHJvamVjdCDigJMgVGhlbWUgMwoKfCBNZW1i
-ZXIgfAp8LS0tfAp8IEpheWFwYWwgTXVrcmUgfAp8IEFtb2doIExvbmkgfAp8
-IENoYW5hYmFzYXBwYSBNZXRndWQgfAp8IFNhbW1lZCBQYXRpbCB8CgotLS0K
-CiMgMjQuIEdpdEh1YiBTdWJtaXNzaW9uCgpUaGUgcmVwb3NpdG9yeSBjb250
-YWluczoKCi0gU291cmNlIGNvZGUKLSBTZXF1ZW50aWFsIGltcGxlbWVudGF0
-aW9uCi0gT3Blbk1QIHBhcmFsbGVsIGltcGxlbWVudGF0aW9uCi0gRGF0YXNl
-dCBnZW5lcmF0aW9uIGNvZGUKLSBCZW5jaG1hcmsgcmVzdWx0cwotIFBlcmZv
-cm1hbmNlIGdyYXBocwotIFJlcG9ydCBtYXRlcmlhbAotIFByZXNlbnRhdGlv
-biBtYXRlcmlhbAotIFZpdmEgcXVlc3Rpb25zIGFuZCBhbnN3ZXJzCgpFeGVj
-dXRhYmxlIGZpbGVzIGFuZCB0ZW1wb3JhcnkgYnVpbGQgZmlsZXMgc2hvdWxk
-IG5vdCBiZSBjb21taXR0ZWQgdG8gdGhlIEdpdEh1YiByZXBvc2l0b3J5IHVu
-bGVzcyBzcGVjaWZpY2FsbHkgcmVxdWlyZWQuCgotLS0KCiMgMjUuIEhvdyB0
-byBSZXByb2R1Y2UgdGhlIEV4cGVyaW1lbnQKCiMjIyBTdGVwIDEg4oCTIENv
-bXBpbGUKCmBgYGJhc2gKZ2NjIC1PMiAtbyBzZXF1ZW50aWFsLmV4ZSBzcmMv
-c2VxdWVudGlhbC5jCmdjYyAtTzIgLWZvcGVubXAgLW8gcGFyYWxsZWwuZXhl
-IHNyYy9wYXJhbGxlbC5jCmBgYAoKIyMjIFN0ZXAgMiDigJMgUnVuIFNlcXVl
-bnRpYWwgVmVyc2lvbgoKYGBgYmFzaAouL3NlcXVlbnRpYWwuZXhlIDEwMDAw
-MDAKLi9zZXF1ZW50aWFsLmV4ZSA1MDAwMDAwCi4vc2VxdWVudGlhbC5leGUg
-MTAwMDAwMDAKLi9zZXF1ZW50aWFsLmV4ZSA1MDAwMDAwMApgYGAKCiMjIyBT
-dGVwIDMg4oCTIFJ1biBQYXJhbGxlbCBWZXJzaW9uCgpgYGBiYXNoCi4vcGFy
-YWxsZWwuZXhlIDEwMDAwMDAgMQouL3BhcmFsbGVsLmV4ZSAxMDAwMDAwIDIK
-Li9wYXJhbGxlbC5leGUgMTAwMDAwMCA0Ci4vcGFyYWxsZWwuZXhlIDEwMDAw
-MDAgOAoKLi9wYXJhbGxlbC5leGUgNTAwMDAwMCAxCi4vcGFyYWxsZWwuZXhl
-IDUwMDAwMDAgMgouL3BhcmFsbGVsLmV4ZSA1MDAwMDAwIDQKLi9wYXJhbGxl
-bC5leGUgNTAwMDAwMCA4CgouL3BhcmFsbGVsLmV4ZSAxMDAwMDAwMCAxCi4v
-cGFyYWxsZWwuZXhlIDEwMDAwMDAwIDIKLi9wYXJhbGxlbC5leGUgMTAwMDAw
-MDAgNAouL3BhcmFsbGVsLmV4ZSAxMDAwMDAwMCA4CgouL3BhcmFsbGVsLmV4
-ZSA1MDAwMDAwMCAxCi4vcGFyYWxsZWwuZXhlIDUwMDAwMDAwIDIKLi9wYXJh
-bGxlbC5leGUgNTAwMDAwMDAgNAouL3BhcmFsbGVsLmV4ZSA1MDAwMDAwMCA4
-CmBgYAoKIyMjIFN0ZXAgNCDigJMgR2VuZXJhdGUgR3JhcGhzCgpgYGBiYXNo
-CnB5dGhvbiBnZW5lcmF0ZV9ncmFwaHMucHkKYGBgCgpUaGUgZ2VuZXJhdGVk
-IGdyYXBocyBhcmUgc3RvcmVkIGluOgoKYGBgdGV4dApncmFwaHMvCmBgYAoK
-LS0tCgojIDI2LiBLZXkgVGFrZWF3YXlzCgoxLiBPcGVuTVAgYWxsb3dzIHRo
-ZSBzdW1tYXRpb24gd29ya2xvYWQgdG8gYmUgZGlzdHJpYnV0ZWQgYW1vbmcg
-bXVsdGlwbGUgdGhyZWFkcy4KMi4gUmVkdWN0aW9uIGlzIHVzZWQgdG8gc2Fm
-ZWx5IGNvbWJpbmUgcGFydGlhbCBzdW1zLgozLiBMYXJnZXIgZGF0YXNldHMg
-Z2VuZXJhbGx5IHByb3ZpZGUgbW9yZSBvcHBvcnR1bml0eSBmb3IgcGFyYWxs
-ZWwgZXhlY3V0aW9uLgo0LiBJbmNyZWFzaW5nIHRoZSBudW1iZXIgb2YgdGhy
-ZWFkcyBkb2VzIG5vdCBhbHdheXMgcHJvZHVjZSBwcm9wb3J0aW9uYWwgc3Bl
-ZWR1cC4KNS4gSW4gdGhpcyBleHBlcmltZW50LCA0IHRocmVhZHMgcHJvdmlk
-ZWQgdGhlIGJlc3QgcGVyZm9ybWFuY2UgZm9yIHRoZSA1MC1taWxsaW9uLWVs
-ZW1lbnQgZGF0YXNldC4KNi4gUGVyZm9ybWFuY2Ugc2hvdWxkIGJlIGV2YWx1
-YXRlZCB1c2luZyBleGVjdXRpb24gdGltZSwgc3BlZWR1cCBhbmQgZWZmaWNp
-ZW5jeS4KNy4gVGhlIGV4cGVyaW1lbnRhbCByZXN1bHRzIGRlbW9uc3RyYXRl
-IHRoZSBwcmFjdGljYWwgYmVuZWZpdHMgYW5kIGxpbWl0YXRpb25zIG9mIHNo
-YXJlZC1tZW1vcnkgcGFyYWxsZWwgY29tcHV0aW5nLgoKLS0tCgojIyBQcm9q
-ZWN0IFN0YXR1cwoKKipTdGF0dXM6IENvbXBsZXRlZCoqCgotIFt4XSBTZXF1
-ZW50aWFsIGltcGxlbWVudGF0aW9uCi0gW3hdIE9wZW5NUCBwYXJhbGxlbCBp
-bXBsZW1lbnRhdGlvbgotIFt4XSBDb3JyZWN0bmVzcyB2ZXJpZmljYXRpb24K
-LSBbeF0gTXVsdGlwbGUgZGF0YXNldCBzaXplcwotIFt4XSBNdWx0aXBsZSB0
-aHJlYWQgY29uZmlndXJhdGlvbnMKLSBbeF0gQmVuY2htYXJrIGRhdGEgY29s
-bGVjdGlvbgotIFt4XSBFeGVjdXRpb24tdGltZSBhbmFseXNpcwotIFt4XSBT
-cGVlZHVwIGFuYWx5c2lzCi0gW3hdIEVmZmljaWVuY3kgYW5hbHlzaXMKLSBb
-eF0gR3JhcGggZ2VuZXJhdGlvbgotIFt4XSBSZXN1bHRzIGFuZCBjb25jbHVz
-aW9uCg==
+# Parallel Sum and Average of Dataset using OpenMP
+
+## Parallel Computing Mini Project
+
+### Theme 3 – Parallel Sum and Average of Dataset
+
+---
+
+## 1. Project Overview
+
+This project implements the calculation of the **sum and average of a large dataset** using both sequential and parallel approaches.
+
+The parallel implementation uses **OpenMP** to distribute the summation workload among multiple threads.
+
+The main objective is to study the performance improvement obtained through parallel computing by comparing:
+
+- Sequential execution
+- OpenMP execution with 1 thread
+- OpenMP execution with 2 threads
+- OpenMP execution with 4 threads
+- OpenMP execution with 8 threads
+
+The experiments are performed using different dataset sizes and the execution time, speedup, and efficiency are analyzed.
+
+---
+
+## 2. Problem Statement
+
+Calculating the sum and average of a very large dataset sequentially requires processing every element one after another.
+
+For a large number of elements, the computation can take more time.
+
+The problem is to design a parallel solution using OpenMP where the dataset is divided among multiple threads so that the sum can be calculated concurrently.
+
+The final result must be correct and equivalent to the sequential implementation.
+
+---
+
+## 3. Objectives
+
+The main objectives of this project are:
+
+1. Implement a sequential sum and average calculation.
+2. Implement a parallel version using OpenMP.
+3. Use multiple threads to distribute the computation.
+4. Use OpenMP reduction to safely calculate the total sum.
+5. Test the implementation with different dataset sizes.
+6. Compare execution time for different thread counts.
+7. Calculate speedup and efficiency.
+8. Generate graphs for performance analysis.
+9. Determine the most effective number of threads for the tested workload.
+
+---
+
+## 4. Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| C | Program implementation |
+| OpenMP | Parallel programming |
+| GCC | C compiler |
+| MSYS2 UCRT64 | Build and execution environment |
+| Python | Graph generation |
+| Pandas | Processing benchmark data |
+| Matplotlib | Generating graphs |
+| GitHub | Project repository and submission |
+
+---
+
+## 5. Parallel Computing Model
+
+The project uses the **shared-memory parallel programming model** with OpenMP.
+
+OpenMP allows multiple threads to execute parts of a loop concurrently.
+
+The main parallel operation is:
+
+```c
+#pragma omp parallel for reduction(+:sum)
+for (long long i = 0; i < n; ++i)
+    sum += data[i];
+```
+
+The `parallel for` directive distributes loop iterations among multiple threads.
+
+The `reduction(+:sum)` clause ensures that each thread can maintain its own partial sum and that the partial sums are safely combined into the final sum.
+
+---
+
+## 6. Algorithm
+
+### 6.1 Sequential Algorithm
+
+1. Read the dataset size.
+2. Allocate memory for the dataset.
+3. Initialize the dataset.
+4. Set the sum to zero.
+5. Traverse every element sequentially.
+6. Add every element to the sum.
+7. Calculate the average:
+
+```text
+Average = Sum / Number of Elements
+```
+
+8. Display the sum, average and execution time.
+
+---
+
+### 6.2 Parallel Algorithm
+
+1. Read the dataset size and number of threads.
+2. Allocate memory for the dataset.
+3. Initialize the dataset using OpenMP.
+4. Set the number of OpenMP threads.
+5. Divide the summation loop among the available threads.
+6. Each thread calculates a partial sum.
+7. OpenMP reduction combines the partial sums.
+8. Calculate the average.
+9. Display the sum, average and execution time.
+
+---
+
+## 7. Dataset
+
+For the benchmark experiments, the program initializes the dataset with values of `1.0`.
+
+Therefore:
+
+```text
+Sum = Number of Elements
+Average = 1.0
+```
+
+For example:
+
+```text
+Dataset size = 50,000,000
+
+Sum     = 50,000,000
+Average = 1.0
+```
+
+Using a known dataset makes it easy to verify the correctness of both the sequential and parallel implementations.
+
+---
+
+## 8. Project Structure
+
+```text
+Theme3_Parallel_Sum_Average_OpenMP_FINAL/
+│
+├── README.md
+├── Makefile
+├── run_experiments.sh
+├── generate_graphs.py
+├── WINDOWS_RUN_GUIDE.md
+├── VIVA_QA.md
+│
+├── src/
+│   ├── sequential.c
+│   ├── parallel.c
+│   ├── generate_dataset.c
+│   └── parallel_file.c
+│
+├── data/
+│   └── README.md
+│
+├── results/
+│   ├── benchmark.csv
+│   └── README.md
+│
+├── graphs/
+│   ├── execution_time_threads_1000000.png
+│   ├── execution_time_threads_5000000.png
+│   ├── execution_time_threads_10000000.png
+│   ├── execution_time_threads_50000000.png
+│   ├── speedup_1000000.png
+│   ├── speedup_5000000.png
+│   ├── speedup_10000000.png
+│   ├── speedup_50000000.png
+│   ├── efficiency_1000000.png
+│   ├── efficiency_5000000.png
+│   ├── efficiency_10000000.png
+│   └── efficiency_50000000.png
+│
+├── report/
+│   └── REPORT_TEMPLATE.md
+│
+└── presentation/
+    ├── PPT_CONTENT.md
+    └── PPT_READY_CONTENT.md
+```
+
+---
+
+## 9. Source Files
+
+### `src/sequential.c`
+
+Contains the sequential implementation for calculating the sum and average of the dataset.
+
+### `src/parallel.c`
+
+Contains the OpenMP parallel implementation using multiple threads and reduction.
+
+### `src/generate_dataset.c`
+
+Generates a dataset file containing numerical values.
+
+### `src/parallel_file.c`
+
+Reads a dataset from a file and calculates the sum and average using OpenMP.
+
+### `generate_graphs.py`
+
+Reads benchmark results and generates execution-time, speedup and efficiency graphs.
+
+### `results/benchmark.csv`
+
+Contains the measured execution times from the experiments.
+
+---
+
+## 10. Compilation
+
+The project was compiled using GCC.
+
+### Sequential Program
+
+```bash
+gcc -O2 -o sequential.exe src/sequential.c
+```
+
+### Parallel Program
+
+```bash
+gcc -O2 -fopenmp -o parallel.exe src/parallel.c
+```
+
+The `-fopenmp` option enables OpenMP support.
+
+---
+
+## 11. Running the Programs
+
+### Sequential
+
+```bash
+./sequential.exe 1000000
+```
+
+### Parallel with 1 Thread
+
+```bash
+./parallel.exe 1000000 1
+```
+
+### Parallel with 2 Threads
+
+```bash
+./parallel.exe 1000000 2
+```
+
+### Parallel with 4 Threads
+
+```bash
+./parallel.exe 1000000 4
+```
+
+### Parallel with 8 Threads
+
+```bash
+./parallel.exe 1000000 8
+```
+
+The same commands can be used with other dataset sizes.
+
+---
+
+## 12. Experimental Configuration
+
+The experiments were performed using the following dataset sizes:
+
+```text
+1,000,000
+5,000,000
+10,000,000
+50,000,000
+```
+
+The following OpenMP thread counts were tested:
+
+```text
+1
+2
+4
+8
+```
+
+Therefore, a total of:
+
+```text
+4 dataset sizes × 4 thread configurations = 16 parallel experiments
+```
+
+were performed.
+
+Sequential measurements were also collected for each dataset size.
+
+---
+
+# 13. Experimental Results
+
+## 13.1 Execution Time
+
+The measured execution times were:
+
+| Dataset Size | Sequential (s) | 1 Thread (s) | 2 Threads (s) | 4 Threads (s) | 8 Threads (s) |
+|---:|---:|---:|---:|---:|---:|
+| 1,000,000 | 0.002000 | 0.002000 | 0.001000 | 0.001000 | 0.002000 |
+| 5,000,000 | 0.007000 | 0.007000 | 0.004000 | 0.003000 | 0.004000 |
+| 10,000,000 | 0.014000 | 0.013000 | 0.008000 | 0.005000 | 0.006000 |
+| 50,000,000 | 0.068000 | 0.062000 | 0.038000 | 0.024000 | 0.025000 |
+
+The results show that execution time generally decreases when multiple threads are used.
+
+The best execution time for the 50-million-element dataset was obtained using 4 threads.
+
+---
+
+## 13.2 50-Million-Element Dataset
+
+For the largest dataset, the measured results were:
+
+| Threads | Execution Time (s) |
+|---:|---:|
+| 1 | 0.062000036 |
+| 2 | 0.037999868 |
+| 4 | 0.023999929 |
+| 8 | 0.025000095 |
+
+The 4-thread configuration provided the lowest measured execution time.
+
+---
+
+# 14. Speedup
+
+Speedup is calculated using:
+
+```text
+Speedup = Sequential Execution Time / Parallel Execution Time
+```
+
+For the 50-million-element dataset:
+
+```text
+Sequential Time = 0.068000000 s
+```
+
+### Speedup Results
+
+| Threads | Execution Time (s) | Speedup |
+|---:|---:|---:|
+| 1 | 0.062000036 | 1.10× |
+| 2 | 0.037999868 | 1.79× |
+| 4 | 0.023999929 | 2.83× |
+| 8 | 0.025000095 | 2.72× |
+
+The highest speedup obtained using the sequential program as the baseline was approximately:
+
+```text
+2.83×
+```
+
+with 4 threads.
+
+---
+
+# 15. Efficiency
+
+Efficiency is calculated using:
+
+```text
+Efficiency = (Speedup / Number of Threads) × 100
+```
+
+For the 50-million-element dataset:
+
+| Threads | Speedup | Efficiency |
+|---:|---:|---:|
+| 1 | 1.10× | 109.7% |
+| 2 | 1.79× | 89.5% |
+| 4 | 2.83× | 70.8% |
+| 8 | 2.72× | 34.0% |
+
+The efficiency decreases as the number of threads increases.
+
+The measured efficiency above 100% for one thread is caused by differences between separate sequential and OpenMP program executions and the extremely small measured execution times. It should not be interpreted as actual parallel efficiency greater than 100%.
+
+---
+
+# 16. Performance Analysis
+
+The experimental results demonstrate that OpenMP can improve the execution time of the sum and average calculation by distributing the workload among multiple threads.
+
+For the 50-million-element dataset, execution time decreased from approximately:
+
+```text
+0.062 seconds → 0.024 seconds
+```
+
+when increasing the OpenMP thread count from 1 to 4.
+
+The corresponding speedup relative to the sequential implementation was approximately:
+
+```text
+2.83×
+```
+
+However, increasing the number of threads from 4 to 8 did not improve performance.
+
+The execution time increased slightly:
+
+```text
+4 threads = 0.023999929 s
+8 threads = 0.025000095 s
+```
+
+This demonstrates that increasing the number of threads does not always result in proportional performance improvement.
+
+Possible reasons include:
+
+- Thread management overhead
+- Synchronization overhead
+- Memory access limitations
+- CPU resource limitations
+- OpenMP scheduling overhead
+- Reduction overhead
+
+Therefore, the optimal number of threads depends on both the workload and the hardware.
+
+---
+
+# 17. Graphs
+
+The project generates three types of graphs for each dataset size.
+
+### Execution Time vs Threads
+
+Shows how execution time changes as the number of OpenMP threads increases.
+
+Example:
+
+```text
+graphs/execution_time_threads_50000000.png
+```
+
+### Speedup vs Threads
+
+Shows the performance improvement obtained from parallel execution.
+
+Example:
+
+```text
+graphs/speedup_50000000.png
+```
+
+### Efficiency vs Threads
+
+Shows how efficiently the available threads are being utilized.
+
+Example:
+
+```text
+graphs/efficiency_50000000.png
+```
+
+Graphs are generated using:
+
+```bash
+python generate_graphs.py
+```
+
+---
+
+# 18. Correctness Verification
+
+The program was verified using the expected mathematical result.
+
+Since every generated element has a value of `1.0`:
+
+```text
+Expected Sum = Dataset Size
+Expected Average = 1.0
+```
+
+For 50 million elements:
+
+```text
+Sum     = 50000000.000000
+Average = 1.000000
+```
+
+The same results were obtained from the sequential and parallel implementations.
+
+Therefore, the OpenMP reduction produces the correct final result.
+
+---
+
+# 19. Complexity
+
+For a dataset containing `N` elements:
+
+### Sequential
+
+```text
+Time Complexity: O(N)
+Space Complexity: O(N)
+```
+
+### Parallel
+
+The total amount of work remains approximately:
+
+```text
+O(N)
+```
+
+but the computation is distributed among multiple threads.
+
+Ideally, the computation time can approach:
+
+```text
+O(N / P)
+```
+
+where:
+
+```text
+N = number of dataset elements
+P = number of threads
+```
+
+In practice, the performance is affected by parallelization overhead, synchronization, memory access and hardware limitations.
+
+---
+
+# 20. Advantages of the Parallel Approach
+
+- Faster processing for sufficiently large datasets.
+- Multiple CPU threads can work simultaneously.
+- OpenMP provides a relatively simple way to implement shared-memory parallelism.
+- Reduction provides safe accumulation of partial sums.
+- Performance can be evaluated using different thread counts.
+
+---
+
+# 21. Limitations
+
+- Increasing threads does not always improve performance.
+- Thread management introduces overhead.
+- Performance depends on available CPU resources.
+- Very small datasets may not benefit significantly from parallelization.
+- Memory bandwidth can become a limiting factor.
+- Execution times can vary slightly between runs because of system activity.
+
+---
+
+# 22. Conclusion
+
+This project successfully implements parallel sum and average calculation using OpenMP.
+
+Both the sequential and parallel implementations produce the correct sum and average.
+
+Experiments were performed using four dataset sizes and four different thread configurations.
+
+The results demonstrate that parallel execution can reduce computation time, particularly for larger datasets.
+
+For the 50-million-element dataset, the best measured configuration was **4 OpenMP threads**, with an execution time of approximately:
+
+```text
+0.024 seconds
+```
+
+and a speedup of approximately:
+
+```text
+2.83×
+```
+
+compared with the sequential implementation.
+
+Increasing the thread count from 4 to 8 did not improve performance, demonstrating that more threads do not always result in better performance.
+
+Overall, the project demonstrates the practical application of OpenMP for shared-memory parallel computing and performance analysis.
+
+---
+
+# 23. Team Members
+
+### Parallel Computing Mini Project – Theme 3
+
+| Member |
+|---|
+| Jayapal Mukre |
+| Amogh Loni |
+| Chanabasappa Metgud |
+| Sammed Patil |
+
+---
+
+# 24. GitHub Submission
+
+The repository contains:
+
+- Source code
+- Sequential implementation
+- OpenMP parallel implementation
+- Dataset generation code
+- Benchmark results
+- Performance graphs
+- Report material
+- Presentation material
+- Viva questions and answers
+
+Executable files and temporary build files should not be committed to the GitHub repository unless specifically required.
+
+---
+
+# 25. How to Reproduce the Experiment
+
+### Step 1 – Compile
+
+```bash
+gcc -O2 -o sequential.exe src/sequential.c
+gcc -O2 -fopenmp -o parallel.exe src/parallel.c
+```
+
+### Step 2 – Run Sequential Version
+
+```bash
+./sequential.exe 1000000
+./sequential.exe 5000000
+./sequential.exe 10000000
+./sequential.exe 50000000
+```
+
+### Step 3 – Run Parallel Version
+
+```bash
+./parallel.exe 1000000 1
+./parallel.exe 1000000 2
+./parallel.exe 1000000 4
+./parallel.exe 1000000 8
+
+./parallel.exe 5000000 1
+./parallel.exe 5000000 2
+./parallel.exe 5000000 4
+./parallel.exe 5000000 8
+
+./parallel.exe 10000000 1
+./parallel.exe 10000000 2
+./parallel.exe 10000000 4
+./parallel.exe 10000000 8
+
+./parallel.exe 50000000 1
+./parallel.exe 50000000 2
+./parallel.exe 50000000 4
+./parallel.exe 50000000 8
+```
+
+### Step 4 – Generate Graphs
+
+```bash
+python generate_graphs.py
+```
+
+The generated graphs are stored in:
+
+```text
+graphs/
+```
+
+---
+
+# 26. Key Takeaways
+
+1. OpenMP allows the summation workload to be distributed among multiple threads.
+2. Reduction is used to safely combine partial sums.
+3. Larger datasets generally provide more opportunity for parallel execution.
+4. Increasing the number of threads does not always produce proportional speedup.
+5. In this experiment, 4 threads provided the best performance for the 50-million-element dataset.
+6. Performance should be evaluated using execution time, speedup and efficiency.
+7. The experimental results demonstrate the practical benefits and limitations of shared-memory parallel computing.
+
+---
+
+## Project Status
+
+**Status: Completed**
+
+- [x] Sequential implementation
+- [x] OpenMP parallel implementation
+- [x] Correctness verification
+- [x] Multiple dataset sizes
+- [x] Multiple thread configurations
+- [x] Benchmark data collection
+- [x] Execution-time analysis
+- [x] Speedup analysis
+- [x] Efficiency analysis
+- [x] Graph generation
+- [x] Results and conclusion

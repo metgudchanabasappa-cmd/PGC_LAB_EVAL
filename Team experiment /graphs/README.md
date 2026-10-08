@@ -1,7 +1,16 @@
-IyBQZXJmb3JtYW5jZSBHcmFwaHMKClRoaXMgZm9sZGVyIGNvbnRhaW5zIHRo
-ZSBncmFwaHMgZ2VuZXJhdGVkIGZyb20gdGhlIE9wZW5NUCBiZW5jaG1hcmsg
-cmVzdWx0cy4KClRoZSBncmFwaHMgc2hvdzoKCi0gRXhlY3V0aW9uIHRpbWUg
-dnMgbnVtYmVyIG9mIHRocmVhZHMKLSBTcGVlZHVwIHZzIG51bWJlciBvZiB0
-aHJlYWRzCi0gRWZmaWNpZW5jeSB2cyBudW1iZXIgb2YgdGhyZWFkcwoKR3Jh
-cGhzIGFyZSBwcm92aWRlZCBmb3IgZGF0YXNldCBzaXplczoKCi0gMSwwMDAs
-MDAwCi0gNSwwMDAsMDAwCi0gMTAsMDAwLDAwMAotIDUwLDAwMCwwMDAK
+# Performance Graphs
+
+This folder contains the graphs generated from the OpenMP benchmark results.
+
+The graphs show:
+
+- Execution time vs number of threads
+- Speedup vs number of threads
+- Efficiency vs number of threads
+
+Graphs are provided for dataset sizes:
+
+- 1,000,000
+- 5,000,000
+- 10,000,000
+- 50,000,000
